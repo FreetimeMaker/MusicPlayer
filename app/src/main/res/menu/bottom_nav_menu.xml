@@ -16,4 +16,10 @@
         android:icon="@drawable/library"
         android:title="Library"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_donate"
+        android:icon="drawable/coin"
+        android:title="Donate"
+        app:showAsAction="ifRoom" />
 </menu>

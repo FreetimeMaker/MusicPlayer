@@ -29,12 +29,17 @@ android {
 }
 
 dependencies {
+    implementation 'com.spotify.android:auth:1.2.3'
+    implementation("androidx.media3:media3-exoplayer:1.2.0") // Use the latest version
+    implementation ('com.google.android.exoplayer:exoplayer:2.19.1')
     implementation("com.google.android.material:material:1.12.0") // Use the latest version
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
     implementation libs.constraintlayout
     implementation libs.filament.android
+    implementation libs.impress
+    implementation libs.media3.exoplayer
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
