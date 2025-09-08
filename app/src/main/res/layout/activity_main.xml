@@ -17,10 +17,39 @@
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:menu="@menu/top_app_bar_menu"
-            style="@style/Widget.Material3.Toolbar.OnSurface" />
+            android:background="@color/green"
+            style="@style/Widget.Material3.Toolbar.OnSurface">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Linkes Icon -->
+                <ImageView
+                    android:id="@+id/leftIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/spotify"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <!-- Rechtes Icon -->
+                <ImageView
+                    android:id="@+id/rightIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/local"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
     </com.google.android.material.appbar.AppBarLayout>
+
 
     <!-- 2. Main Content Grid -->
     <!-- The RecyclerView is placed within the CoordinatorLayout. -->
@@ -44,8 +73,6 @@
         android:layout_gravity="bottom"
         app:menu="@menu/bottom_nav_menu"
         style="@style/Widget.Material3.BottomNavigationView"
-        android:background="@color/red"
-        app:itemIconTint="@color/bottom_nav_item_color_m3"
-        app:itemTextColor="@color/bottom_nav_item_color_m3" />
+        android:background="@color/red"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
