@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/home"
-        android:title="Home"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/nav_search"
-        android:icon="@drawable/search"
-        android:title="Search"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/nav_library"
-        android:icon="@drawable/library"
-        android:title="Library"
-        app:showAsAction="ifRoom" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_donate"
-        android:icon="@drawable/dono"
-        android:title="Donate"
-        app:showAsAction="ifRoom" />
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_notifications" />
+
 </menu>
