@@ -12,14 +12,26 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.freetime.musicplayer.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_search"
+        android:name="com.freetime.musicplayer.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.freetime.musicplayer.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_library"
+        android:name="com.freetime.musicplayer.ui.library.LibraryFragment"
+        android:label="@string/title_library"
+        tools:layout="@layout/fragment_library" />
+
+    <fragment
+        android:id="@+id/navigation_spotify"
+        android:name="com.freetime.musicplayer.ui.spotify.SpotifyFragment"
+        android:label="@string/title_spotify"
+        tools:layout="@layout/fragment_spotify" />
+
+    <fragment
+        android:id="@+id/navigaton_local_music"
+        android:name="com.freetime.musicplayer.ui.local.LocalFragment"
+        android:label="@string/title_local"
+        tools:layout="@layout/fragment_local" />
 </navigation>
